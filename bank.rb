@@ -4,9 +4,8 @@ def self.accounts
   @@accounts
 end
 
-
   @@accounts = []
-  attr_reader :balance :interest_rate
+  attr_reader :balance, :interest_rate
 
   def initialize
     @balance = 0
@@ -38,14 +37,14 @@ end
 
 end
 
-my_account = BankAccount.new
-
-puts my_account.balance
-
-my_account.deposit=(200)
-
-puts my_account.balance
-
-my_account.withdraw=(500)
-
-my_account.gain_interest
+# my_account = BankAccount.new
+#
+# puts my_account.balance
+#
+# my_account.deposit=(200)
+#
+# puts my_account.balance
+#
+# my_account.withdraw=(500)
+#
+# my_account.gain_interest
